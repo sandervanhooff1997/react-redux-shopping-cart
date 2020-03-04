@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Counter } from "components";
 import { resetCounters } from "store/slices/counters";
 import { connect } from "react-redux";
 
 const Counters = ({ counters, dispatch }) => {
+  //console.log(useContext(UserContext));
+
   return (
     <div>
       <button
